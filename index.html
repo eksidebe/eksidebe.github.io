@@ -1,2 +1,20 @@
-eksidebe
-.
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("https://eksidebe.github.io/data/data/19-12-2020.json", function(data, status){
+      console.log(data)
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Button</button>
+
+</body>
+</html>
